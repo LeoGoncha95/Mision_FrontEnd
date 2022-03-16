@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+</head>
+<body>
+    <h1><a href="./Solaris.html">Solaris</a></h1>
+    <h2>Pedidos</h2>
+    <hr>
+
+    <div>
+        <h3>Tipos de pasteles</h3>
+        <table>
+            <tr>
+                <th>Tres leches</th>
+                <th>Napolitano</th>
+                <th>Flan</th>
+            </tr>
+            <tr>
+                 <td><img src="./Imagenes/Pastel_1.jpg" alt="Tres leches" width="150px" height="150px"></td>
+                 <td><img src="./Imagenes/Pastel_1.jpg" alt="Napolitano" width="150px" height="150px"></td>
+                 <td><img src="./Imagenes/Pastel_1.jpg" alt="Flan" width="150px" height="150px"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h3>Sabores</h3>
+        <table>
+            <tr>
+                <th>Chocolate</th>
+                <th>Vainilla</th>
+                <th>Fresa</th>
+            </tr>
+            <tr>
+                 <td><img src="./Imagenes/Pastel_1.jpg" alt="Chocolate" width="150px" height="150px"></td>
+                 <td><img src="./Imagenes/Pastel_1.jpg" alt="Vainilla" width="150px" height="150px"></td>
+                 <td><img src="./Imagenes/Pastel_1.jpg" alt="Fresa" width="150px" height="150px"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h3>Decoración</h3>
+        <table>
+            <tr>
+                <th>Chispitas</th>
+                <th>Chantillí</th>
+                <th>Chocolate</th>
+            </tr>
+            <tr>
+                 <td><img src="./Imagenes/Pastel_1.jpg" alt="Chispitas" width="150px" height="150px"></td>
+                 <td><img src="./Imagenes/Pastel_1.jpg" alt="Chantillí" width="150px" height="150px"></td>
+                 <td><img src="./Imagenes/Pastel_1.jpg" alt="Chocolate" width="150px" height="150px"></td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+
+    <div>
+        <h3>Formulario de pedido</h3>
+        <form action="pedido.js">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="nombre"><br>
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="telefono" id="telefono" maxlength="10"><br>
+            
+            <label for="correo">Correo</label>
+            <input type="email" name="correo" id="correo"><br>
+            <label for="descripcion">Escriba detalle de su pedido</label><br>
+
+            <table>
+                <tr>
+                    <th>Tipo de pastel</th>
+                    <th>Sabor</th>
+                    <th>Decoración</th>
+                </tr>
+                <tr>
+                    <th>
+                        <p>
+                            <input type="radio" name="Pastel_1" id="leche" value="Tres leches">
+                            <label for="leche">Tres leches $150.00</label><br>
+                                
+                            <input type="radio" name="pastel_2" id="napolitano" value="Napolitano">
+                            <label for="napolitano">Napolitano $160.00</label><br>
+                            
+                            <input type="radio" name="pastel_3" id="flan" value="flan">
+                            <label for="flan">Flan $100.00</label>
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            <input type="radio" name="Sabor_1" id="Chocolate" value="Chocolate">
+                            <label for="Chocolate">Chocolate $60.00</label><br>
+                                
+                            <input type="radio" name="Sabor_2" id="Vainilla" value="Vainilla">
+                            <label for="Vainilla">Vainilla $60.00</label><br>
+                               
+                            <input type="radio" name="Sabor_3" id="Fresa" value="Fresa">
+                            <label for="Fresa">Fresa $80.00</label>
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            <input type="radio" name="Decoracion_1" id="Chispitas" value="Chispitas">
+                            <label for="Chispitas">Chispitas $100.00</label><br>
+                                
+                            <input type="radio" name="Decoracion_2" id="Chantillí" value="Chantillí">
+                            <label for="Chantillí">Chantillí $60.00</label><br>
+                            
+                            <input type="radio" name="Decoracion_3" id="chocolate" value="chocolate">
+                            <label for="chocolate">Chocolate $60.00</label>
+                        </p>
+                    </th>
+                </tr>
+            </table>
+
+            <textarea name="descripción" id="descripcion" cols="30" rows="10"></textarea><br>
+
+            <p>Total: $xxxx.00 <input type="button" value="Enviar"></p>
+
+        </form>
+
+    </div>
+
+
+
+
+ 
+    
+
+    <hr>
+    <p>Av. Tláhuac 6073, Santa Ana Poniente, Tláhuac, 13300 Ciudad de México, CDMX
+        <br> Telefono: <me>5524573215</me> <br> Lunes - Viernes: 7am a 8pm <br> Sábado y Domingo: 7am a 7pm 
+    </p>
+
+</body>
+</html>
